@@ -32,28 +32,40 @@ The language choice/framework was left to the author's discretion, so to that en
 Installation (on amazon linux 2):
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
 . ~/.nvm/nvm.sh
+
 nvm install node
+
 npm install express
+
 npm install request
 
 copy/git pull serve.js down to /root (yes we embraced poor security for this)
+
 from /root run:
+
 node server.js
 
 
 Tested on:
+
 AWS, T3 Nano running Amazon Linux 2
+
 Windows 10 home edition (With some minor path changes)
 
 
 Some items being worked on but ran out of time to finish:
+
 Daemonizing the server process so it could be started and stopped via systemctl (and would have come with a shell script to run the install and start the process right off the bat via user-data in AWS)
 
 and along that same thought process, writing out the log to an actual log file instead of the console.. was working on overriding console.log but didn't quite get all of the nuances of that worked out.
 
 
 Files in this repo:
+
 server.js (server applet)
+
 readme.md (this file)
+
 api.http (test cases used with VSC pluggin to send commands/json to the server)
