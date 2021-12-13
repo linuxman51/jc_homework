@@ -1,5 +1,3 @@
-http://<ip>:80/manage_file
-
 ###
 
 POST http://<ip>:80/manage_file
@@ -24,6 +22,18 @@ Content-Type: application/json
 ###
 http://<ip>/barf
 
+###
+
+POST http://<ip>:80/manage_file12345
+Content-Type: application/json
+
+{ "action": "read" }
+###
+
+POST http://<ip>:80/
+Content-Type: application/json
+
+{ "action": "read" }
 
 ###
 POST http://<ip>:80/manage_file
