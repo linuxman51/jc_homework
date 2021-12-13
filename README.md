@@ -69,3 +69,7 @@ server.js (server applet)
 readme.md (this file)
 
 api.http (test cases used with VSC pluggin to send commands/json to the server)
+
+
+addendum:
+I was able to run this locally on my machine as well (referenced above as the windows 10 box) with the windows binary installer of node.js, the above mentioned modules, and tested it locally with the REST client for visual studio code (which is what will use the api.http file). 
