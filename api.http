@@ -1,0 +1,38 @@
+http://<ip>:80/manage_file
+
+###
+
+POST http://<ip>:80/manage_file
+Content-Type: application/json
+
+{ "action": "download" }
+
+###
+POST http://<ip>:80/manage_file
+Content-Type: application/json
+
+{ "action": "read" }
+
+###
+
+POST http://<ip>:80/manage_file
+Content-Type: application/json
+
+{ "action": "narf" }
+
+
+###
+http://<ip>/barf
+
+
+###
+POST http://<ip>:80/manage_file
+Content-Type: application/json
+
+{ "bob": "narf" }
+
+###
+POST http://<ip>:80/manage_file
+Content-Type: application/json
+
+{ "bobkjasdfkjsahkdfasfdaS" }
